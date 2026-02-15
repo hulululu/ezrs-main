@@ -1,0 +1,19 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1a1a1a" />
+  
+  <!-- City Blocks -->
+  <rect x="50" y="250" width="40" height="100" fill="#333" stroke="#555" />
+  <rect x="100" y="200" width="50" height="150" fill="#333" stroke="#555" />
+  <rect x="160" y="180" width="40" height="170" fill="#333" stroke="#555" />
+  <rect x="210" y="150" width="60" height="200" fill="#333" stroke="#555" />
+  
+  <!-- Glowing Path overlay acting as 'urban plan' -->
+  <path d="M50,300 Q250,100 550,50" fill="none" stroke="#ffa500" stroke-width="4" stroke-dasharray="10,10" />
+  
+  <!-- Data points -->
+  <circle cx="125" cy="200" r="5" fill="#ffa500" />
+  <circle cx="240" cy="150" r="5" fill="#ffa500" />
+  <circle cx="400" cy="100" r="5" fill="#ffa500" />
+  
+  <text x="400" y="350" fill="#ffa500" font-family="monospace">URBAN_GROWTH_VECTOR</text>
+</svg>

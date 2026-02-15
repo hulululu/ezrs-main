@@ -1,0 +1,41 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#051a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#020205;stop-opacity:1" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#grad1)" />
+  
+  <!-- Grid -->
+  <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#00A3E0" stroke-width="0.5" opacity="0.05"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Nano Banana Constellation -->
+  <g transform="translate(1400, 300) scale(2)" opacity="0.3">
+     <circle cx="0" cy="0" r="2" fill="white" filter="url(#glow)" />
+     <circle cx="50" cy="-20" r="3" fill="white" filter="url(#glow)" />
+     <circle cx="100" cy="0" r="2" fill="white" filter="url(#glow)" />
+     <circle cx="140" cy="40" r="2" fill="white" filter="url(#glow)" />
+     <circle cx="160" cy="90" r="3" fill="white" filter="url(#glow)" />
+     
+     <!-- Lines connecting stars to form a banana curve -->
+     <path d="M0,0 Q50,-40 100,0 T160,90" fill="none" stroke="#00A3E0" stroke-width="1" stroke-dasharray="5,5" opacity="0.6" />
+  </g>
+
+  <!-- Abstract Orbit Rings -->
+  <circle cx="0" cy="1080" r="800" fill="none" stroke="#20C20E" stroke-width="1" opacity="0.1" stroke-dasharray="20,10" />
+  <circle cx="1920" cy="0" r="600" fill="none" stroke="#00A3E0" stroke-width="1" opacity="0.1" />
+
+</svg>
